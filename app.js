@@ -39,3 +39,17 @@ $(".review-list").slick({
     // instead of a settings object
   ],
 });
+
+
+/*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2500,
+  delay: 400,
+})
+sr.reveal(`.hero-content, .container-fluid`) 
+sr.reveal(`.hero-image, .review-main`,{origin: 'bottom'})
+sr.reveal(`.service-item,.article-item`,{interval: 100}) 
+sr.reveal(`.feature-content`,{origin: 'right'})
+sr.reveal(`.feature-image`,{origin: 'left'})
